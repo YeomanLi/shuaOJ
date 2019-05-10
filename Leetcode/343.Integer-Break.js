@@ -1,7 +1,3 @@
-/**
- * @param {number} n
- * @return {number}
- */
 var integerBreak = function(n) {
   let dp = []
   dp[0] = 0

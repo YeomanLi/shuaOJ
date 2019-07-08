@@ -60,6 +60,7 @@ BinTree Delete(BinTree BST, ElementType X)
                 Tmp = FindMin(BST -> Right);    //  找出右子树中最小结点
                 BST -> Data = Tmp -> Data;      //  填充删除结点
                 BST -> Right = Delete(BST -> Right, BST -> Data);   //  从右子树中删除最小元素
+
             /*
                 只有一个孩子或者是叶子是结点
                 直接将孩子挂上去

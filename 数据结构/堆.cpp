@@ -107,6 +107,7 @@ int main ()
     Insert(H, 12);
     // 先建立完全二叉树，再调整，复杂度 N，树中各结点高度和
     MaxHeap I = CreateHeap(20);
+    I -> Size = H -> Size;
     I -> Data[1] = 20;
     I -> Data[2] = 18;
     I -> Data[3] = 24;
@@ -114,7 +115,7 @@ int main ()
     I -> Data[5] = 2;
     I -> Data[6] = 12;
     BuildHeap(I);
-    for (int i = 0; i <= H -> Size; ++i)
+    for (int i = 0; i <= I -> Size; ++i)
         cout << H -> Data[i] << " " << I -> Data[i] << endl;
     return 0;
 }
